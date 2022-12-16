@@ -60,6 +60,8 @@ Ground bounce and voltage droop are two of the major challenges faced by VLSI ph
 These algorithms can directly estimate the relationship between input design parameters and the output IR-drop values. Regression algorithms are also able to handle a large number of input parameters, which is necessary when considering the complex nature of VLSI designs. Furthermore, they are able to capture non-linear relationships between the input and output parameters, which is useful for predicting the IR-drop in a VLSI design.
 
 One example of an applied model is outlined in this paper : 'Fast Dynamic IR-Drop Prediction Using Machine Learning in Bulk FinFET Technologies' - linked below  
+Fast Dynamic IR-Drop Prediction Using Machine Learning in Bulk FinFet technologies.pdf
+
 https://mdpi-res.com/d_attachment/symmetry/symmetry-13-01807/article_deploy/symmetry-13-01807-v2.pdf?version=1634695917
 Recall when you tasked me with seperating the IR-Drop violations in a .dvd file into a seperate column so that you could then let CCChai or someone else handling power to do do an ECO on the violating area. The researchers in this paper from China's National University of Defense Technology built a fine-tuned model based on the XGBoost open-source machine learning library that's also licensed 
 
