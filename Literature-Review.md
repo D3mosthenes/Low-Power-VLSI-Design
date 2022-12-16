@@ -63,6 +63,7 @@ One example of an applied model is outlined in this paper : 'Fast Dynamic IR-Dro
 Fast Dynamic IR-Drop Prediction Using Machine Learning in Bulk FinFet technologies.pdf
 
 https://mdpi-res.com/d_attachment/symmetry/symmetry-13-01807/article_deploy/symmetry-13-01807-v2.pdf?version=1634695917  
+  
 Recall when you tasked me with seperating the IR-Drop violations in a .dvd file into a seperate column so that you could then let CCChai or someone else handling power to do do an ECO on the violating area. The researchers in this paper from China's National University of Defense Technology built a fine-tuned model based on the XGBoost open-source machine learning library. The model is capable of analysing a given IR-Drop violation ina  specific portion of the design, and then estimating the IR-Drop reduction from various different solutions, such as calculating the decreased voltage from downsizing transistors, or by applying miscellaenous ancillary voltage buffering techniques. This essentially reduces the decision-making time on our part on following an cyclical ECO flow of manually and iteratively adjusting design parameters like cell-drive strength, transistor voltage treshold, and by adding voltage buffering components like Inverters and Schmitt Triggers by trial and error.
 
 #### Other design automation scenarios in our VLSI design flow benefit from using regression algorithmslike the model applied here 
