@@ -62,11 +62,10 @@ These algorithms can directly estimate the relationship between input design par
 One example of an applied model is outlined in this paper : 'Fast Dynamic IR-Drop Prediction Using Machine Learning in Bulk FinFET Technologies' - linked below  
 Fast Dynamic IR-Drop Prediction Using Machine Learning in Bulk FinFet technologies.pdf
 
-https://mdpi-res.com/d_attachment/symmetry/symmetry-13-01807/article_deploy/symmetry-13-01807-v2.pdf?version=1634695917
-Recall when you tasked me with seperating the IR-Drop violations in a .dvd file into a seperate column so that you could then let CCChai or someone else handling power to do do an ECO on the violating area. The researchers in this paper from China's National University of Defense Technology built a fine-tuned model based on the XGBoost open-source machine learning library that's also licensed 
+https://mdpi-res.com/d_attachment/symmetry/symmetry-13-01807/article_deploy/symmetry-13-01807-v2.pdf?version=1634695917  
+Recall when you tasked me with seperating the IR-Drop violations in a .dvd file into a seperate column so that you could then let CCChai or someone else handling power to do do an ECO on the violating area. The researchers in this paper from China's National University of Defense Technology built a fine-tuned model based on the XGBoost open-source machine learning library. The model is capable of analysing a given IR-Drop violation ina  specific portion of the design, and then estimating the IR-Drop reduction from various different solutions, such as calculating the decreased voltage from downsizing transistors, or by applying miscellaenous ancillary voltage buffering techniques. This essentially reduces the decision-making time on our part on following an cyclical ECO flow of manually and iteratively adjusting design parameters like cell-drive strength, transistor voltage treshold, and by adding voltage buffering components like Inverters and Schmitt Triggers by trial and error.
 
-
-#### Which design automation scenarios in VLSI design benefit from using regression algorithms? 
+#### Other design automation scenarios in our VLSI design flow benefit from using regression algorithmslike the model applied here 
 1. Timing/Performance Optimization: Regression algorithms can be used to optimize the timing and performance of VLSI designs by predicting how changes to the design will affect the overall performance. 
 2. Layout Synthesis: Regression algorithms can be used to predict the best layout for a given VLSI design. 
 3. Verification: Regression algorithms can be used to verify the correctness of the VLSI design by comparing the outputs of the design with the expected outputs. 
@@ -77,6 +76,6 @@ Regression algorithms can be used to predict the power consumption of a VLSI des
 
 
 #### Conclusion
-This literature review has provided an overview of several methods for IR-drop estimation used in VLSI physical design. It has discussed the advantages and disadvantages of both analytical and numerical methods, as well as the challenges posed by increasing circuit complexity and design density. This review has also provided an overview of the major techniques used for IR-drop estimation, with a focus on their differences and which method may be most appropriate for a given design.
+This literature review has provided an overview of several methods for IR-drop estimation used in VLSI physical design. It has discussed the advantages and disadvantages of both analytical and numerical methods, as well as the challenges posed by increasing circuit complexity and design density. Also included is an overview of the major techniques used for IR-drop estimation, with a focus on their differences and which method may be most appropriate for a given design.
 
 
